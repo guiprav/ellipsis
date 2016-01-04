@@ -1,0 +1,13 @@
+{
+  "name": "cms",
+  "author": "Guilherme Prá Vieira (super.driver.512@gmail.com)",
+  "license": "AGPL-3.0+",
+  "homepage": "https://github.com/n2liquid/cms",
+  "dependencies": {
+    "express": "^4.13.3",
+    "glob": "^6.0.3",
+    "handlebars": "^4.0.5",
+    "read-text-file-sync": "github:n2liquid/read-text-file-sync",
+    "yaml-js": "^0.1.3"
+  }
+}
