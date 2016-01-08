@@ -5,8 +5,10 @@
   "homepage": "https://github.com/n2liquid/cms",
   "dependencies": {
     "express": "^4.13.3",
+    "front-matter": "^2.0.5",
     "glob": "^6.0.3",
     "handlebars": "^4.0.5",
+    "marked": "^0.3.5",
     "read-text-file-sync": "github:n2liquid/read-text-file-sync",
     "yaml-js": "^0.1.3"
   }
