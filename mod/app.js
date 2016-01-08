@@ -2,10 +2,10 @@
 
 let express = require('express');
 
-let conf = require('./conf');
+let conf = require('../conf');
 
 exports = module.exports = express();
 
-require('./route');
+require('../route');
 
 exports.listen(process.env.PORT || conf.defaultPort);

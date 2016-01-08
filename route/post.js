@@ -1,6 +1,6 @@
 'use strict';
 
-let app = require('../app');
+let app = require('../mod/app');
 
 let templ = require('../templ');
 
