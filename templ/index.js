@@ -5,6 +5,8 @@ let baseName = path.basename;
 
 let readTextFileSync = require('read-text-file-sync');
 
+let fm = require('front-matter');
+
 let glob = require('glob');
 
 let hbs = require('handlebars');
@@ -34,14 +36,16 @@ glob.sync(__dirname + '/*.hbs').forEach(function(file) {
 
     let name = baseName(file, '.hbs');
 
-    let templ = readTextFileSync(file);
+    let templ = fm(readTextFileSync(file));
 
-    let compiledTempl = hbs.compile(templ);
+    let compiledTempl = hbs.compile(templ.body);
 
     exports[name] = function(data) {
         data = data || {};
 
         data.conf = conf;
+
+        data.attr = templ.attributes;
 
         return compiledTempl(data);
     };
