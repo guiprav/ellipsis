@@ -1,8 +1,10 @@
 'use strict';
 
-let md = require('marked');
-
 let overloaded = require('overloaded');
+
+let unindent = require('unindent');
+
+let md = require('marked');
 
 module.exports = function() {
     let args = overloaded(arguments, {
@@ -14,5 +16,5 @@ module.exports = function() {
         args.text = args.options.fn(this);
     }
 
-    return md(args.text);
+    return md(unindent(args.text));
 };

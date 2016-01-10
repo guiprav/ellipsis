@@ -11,6 +11,7 @@
     "marked": "^0.3.5",
     "overloaded": "github:n2liquid/node-overloaded",
     "read-text-file-sync": "github:n2liquid/read-text-file-sync",
+    "unindent": "^2.0.0",
     "yaml-js": "^0.1.3"
   }
 }
