@@ -11,7 +11,7 @@ let glob = require('glob');
 
 let hbs = require('handlebars');
 
-let globalData = $require('data');
+let data = $require('data');
 
 glob.sync(__dirname + '/*.helper.js').forEach(function(file) {
     let name = baseName(file, '.helper.js');
@@ -38,15 +38,15 @@ glob.sync(__dirname + '/*.hbs').forEach(function(file) {
 
     let templ = fm(readTextFileSync(file));
 
-    Object.setPrototypeOf(templ.attributes, globalData);
+    Object.setPrototypeOf(templ.attributes, data);
 
     let compiledTempl = hbs.compile(templ.body);
 
-    exports[name] = function(data) {
-        data = data || {};
+    exports[name] = function(templData) {
+        templData = templData || {};
 
-        Object.setPrototypeOf(data, templ.attributes);
+        Object.setPrototypeOf(templData, templ.attributes);
 
-        return compiledTempl(data);
+        return compiledTempl(templData);
     };
 });
