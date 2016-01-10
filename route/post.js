@@ -1,10 +1,10 @@
 'use strict';
 
-let app = require('../mod/app');
+let app = $require('mod/app');
 
-let templ = require('../templ');
+let templ = $require('templ');
 
-let loadPost = require('../mod/post/load');
+let loadPost = $require('mod/post/load');
 
 app.param('postId', function(req, res, next, id) {
     let post = req.post = loadPost(id);

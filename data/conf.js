@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('../conf');
+module.exports = $require('conf');

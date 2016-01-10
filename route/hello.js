@@ -1,8 +1,8 @@
 'use strict';
 
-let app = require('../mod/app');
+let app = $require('mod/app');
 
-let templ = require('../templ');
+let templ = $require('templ');
 
 app.get('/hello', function(req, res) {
     res.send(templ.hello());

@@ -6,10 +6,10 @@ let readTextFileSync = require('read-text-file-sync');
 
 let fm = require('front-matter');
 
-let makeSlug = require('../makeSlug');
+let makeSlug = $require('mod/makeSlug');
 
 module.exports = function(id) {
-    let path = __dirname + '/../../post/byId/' + id;
+    let path = pathFromRoot('post/byId', id);
 
     if(!fs.existsSync(path)) {
         return null;

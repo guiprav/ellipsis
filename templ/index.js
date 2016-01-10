@@ -11,7 +11,7 @@ let glob = require('glob');
 
 let hbs = require('handlebars');
 
-let globalData = require('../data');
+let globalData = $require('data');
 
 glob.sync(__dirname + '/*.helper.js').forEach(function(file) {
     let name = baseName(file, '.helper.js');
