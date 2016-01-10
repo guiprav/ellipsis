@@ -8,9 +8,10 @@
     "front-matter": "^2.0.5",
     "glob": "^6.0.3",
     "handlebars": "^4.0.5",
+    "load": "github:n2liquid/node-load",
     "marked": "^0.3.5",
     "overloaded": "github:n2liquid/node-overloaded",
-    "read-text-file-sync": "github:n2liquid/read-text-file-sync",
+    "read-text-file-sync": "github:n2liquid/node-read-text-file-sync",
     "unindent": "^2.0.0",
     "yaml-js": "^0.1.3"
   }

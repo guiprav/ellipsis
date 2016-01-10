@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="{{baseUrl}}/socialHeader.css">
+
+<div class="content">
+    <style scoped>
+        .bottom_aligned {
+            position: absolute;
+            bottom: 0;
+
+            width: 100%;
+        }
+
+        .bottom_overflown {
+            position: absolute;
+            bottom: -30px;
+        }
+
+        .bold_text {
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+
+        .small-v-margin {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <header class="pure-g bold_text profile_header">
+        <div class="pure-u-1-6">
+            <div class="profile_header__picture_frame bottom_overflown">
+                <img class="profile_header__picture" src="{{base_url}}/profile_picture.png">
+            </div>
+        </div>
+
+        <div class="pure-u-5-6">
+            <div class="bottom_aligned" style="margin-left:10px">
+                <h1 class="profile_header__profile_name small-v-margin">
+                    {{profile.name}}
+                </h1>
+
+                <h2 class="profile_header__profile_short_bio small-v-margin">
+                    {{profile.short_bio}}
+                </h2>
+            </div>
+        </div>
+    </header>
+</div>

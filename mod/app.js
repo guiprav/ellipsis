@@ -1,5 +1,7 @@
 'use strict';
 
+require('./init');
+
 let express = require('express');
 
 let conf = require('../conf');
