@@ -1,8 +1,19 @@
 {
-  "name": "cms",
+  "name": "ellipsis",
+  "version": "1.0.0",
   "author": "Guilherme Prá Vieira (super.driver.512@gmail.com)",
   "license": "AGPL-3.0+",
-  "homepage": "https://github.com/n2liquid/cms",
+  "homepage": "https://github.com/n2liquid/ellipsis",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/n2liquid/ellipsis"
+  },
+  "bugs": {
+    "url": "https://github.com/n2liquid/ellipsis/issues"
+  },
+  "scripts": {
+    "start": "./index.js"
+  },
   "dependencies": {
     "express": "^4.13.3",
     "front-matter": "^2.0.5",
