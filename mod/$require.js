@@ -8,6 +8,7 @@ let joinPath = path.join;
 let pathFromRoot = require('./pathFromRoot');
 
 let loadTree = require('./loadTree');
+let load = require('load');
 
 module.exports = function() {
     let path = pathFromRoot(joinPath.apply(null, arguments));
@@ -23,5 +24,5 @@ module.exports = function() {
         }
     }
 
-    return require(path);
+    return load(path);
 };
