@@ -1,5 +1,7 @@
 'use strict';
 
-require('../mod/loadTree')(__dirname, global);
+let loadTree = require('./loadTree');
+
+loadTree(__dirname, global);
 
 delete global.index;

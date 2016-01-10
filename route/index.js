@@ -1,3 +1,3 @@
 'use strict';
 
-$require('mod/loadTree')(__dirname, null);
+loadTree(__dirname, null);
