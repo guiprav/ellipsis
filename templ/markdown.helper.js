@@ -2,10 +2,10 @@
 
 let md = require('marked');
 
-let overloaded = require('../mod/overloaded');
+let overloaded = require('overloaded');
 
 module.exports = function() {
-    var args = overloaded(arguments, {
+    let args = overloaded(arguments, {
         1: ['options'],
         2: ['text', 'options']
     });

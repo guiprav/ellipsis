@@ -9,6 +9,7 @@
     "glob": "^6.0.3",
     "handlebars": "^4.0.5",
     "marked": "^0.3.5",
+    "overloaded": "github:n2liquid/node-overloaded",
     "read-text-file-sync": "github:n2liquid/read-text-file-sync",
     "yaml-js": "^0.1.3"
   }
