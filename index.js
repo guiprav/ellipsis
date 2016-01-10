@@ -3,4 +3,4 @@
 
 require('./init');
 
-module.exports = require('./mod/app');
+module.exports = $require('mod/app');
