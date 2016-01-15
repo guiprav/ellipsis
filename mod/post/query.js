@@ -12,6 +12,9 @@ module.exports = function() {
             .map(function(path) {
                 return loadPost(noExtBaseName(path));
             })
+            .filter(function(post) {
+                return post.publish;
+            })
             .sort(function(a, b) {
                 a = a.ctime.getTime();
                 b = b.ctime.getTime();
