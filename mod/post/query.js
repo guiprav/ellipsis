@@ -13,12 +13,12 @@ module.exports = function() {
                 return loadPost(noExtBaseName(path));
             })
             .sort(function(a, b) {
-                let actime = a.ctime.getTime();
-                let bctime = b.ctime.getTime();
+                a = a.ctime.getTime();
+                b = b.ctime.getTime();
 
                 return (
-                    a < b? -1 :
-                    a > b? 1 :
+                    a < b? 1 :
+                    a > b? -1 :
                     0
                 );
             })

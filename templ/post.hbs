@@ -1,7 +1,12 @@
 {{> head}}
+{{> blogHead}}
+
+{{> blogHeader}}
 
 <h1>
-    {{title}}
+    <a href="{{baseUrl}}/post/{{id}}/{{slug}}">
+        {{title}}
+    </a>
 </h1>
 
-{{{markdown body}}}
+{{markdown body}}
