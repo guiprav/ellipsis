@@ -9,7 +9,7 @@ let fm = require('front-matter');
 let makeSlug = $require('mod/makeSlug');
 
 module.exports = function(id) {
-    let path = pathFromRoot('post/byId', id);
+    let path = pathFromRoot('post/byId', id + '.md');
 
     if(!fs.existsSync(path)) {
         return null;
