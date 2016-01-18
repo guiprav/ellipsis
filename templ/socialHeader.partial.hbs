@@ -2,18 +2,6 @@
 
 <div class="content">
     <style scoped>
-        .bottom_aligned {
-            position: absolute;
-            bottom: 0;
-
-            width: 100%;
-        }
-
-        .bottom_overflown {
-            position: absolute;
-            bottom: -30px;
-        }
-
         .bold_text {
             color: white;
             text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -25,23 +13,68 @@
         }
     </style>
 
-    <header class="pure-g bold_text profile_header">
-        <div class="pure-u-1-6">
-            <div class="profile_header__picture_frame bottom_overflown">
-                <img class="profile_header__picture" src="{{base_url}}/img/profilePicture.png">
+    <header class="profile_header">
+        <div class="pure-g socialHeaderTop">
+            <div class="pure-u-1-6">
+                <div class="profile_header__picture_frame">
+                    <img class="profile_header__picture" src="{{base_url}}/img/profilePicture.png">
+                </div>
+            </div>
+
+            <div class="pure-u-5-6 bold_text">
+                <div class="socialHeadings">
+                    <h1 class="profile_header__profile_name small-v-margin">
+                        {{socialProfile.name}}
+                    </h1>
+
+                    <h2 class="profile_header__profile_short_bio small-v-margin">
+                        {{socialProfile.shortBio}}
+                    </h2>
+                </div>
             </div>
         </div>
 
-        <div class="pure-u-5-6">
-            <div class="bottom_aligned" style="margin-left:10px">
-                <h1 class="profile_header__profile_name small-v-margin">
-                    {{socialProfile.name}}
-                </h1>
-
-                <h2 class="profile_header__profile_short_bio small-v-margin">
-                    {{socialProfile.shortBio}}
-                </h2>
-            </div>
-        </div>
+        <ul class="socialHeaderMenu">
+            <li>
+                <a href="{{baseUrl}}/social/about">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="{{baseUrl}}/social/timeline">
+                    Timeline
+                </a>
+            </li>
+            <li>
+                <a href="{{baseUrl}}/social/blog">
+                    Blog
+                </a>
+            </li>
+            <li>
+                <a href="{{baseUrl}}/social/photos">
+                    Photos
+                </a>
+            </li>
+            <li>
+                <a href="{{baseUrl}}/social/videos">
+                    Videos
+                </a>
+            </li>
+            <li>
+                <a href="{{baseUrl}}/social/software">
+                    Software
+                </a>
+            </li>
+            <li>
+                <a href="{{baseUrl}}/social/likes">
+                    Likes
+                </a>
+            </li>
+            <li>
+                <a href="{{baseUrl}}/social/friends">
+                    Friends
+                </a>
+            </li>
+        </ul>
     </header>
 </div>
