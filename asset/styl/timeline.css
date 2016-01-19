@@ -1,0 +1,13 @@
+.timelineEvent {
+    padding: 10px;
+}
+
+.timelineActorAvatar {
+    float: left;
+    margin-right: 10px;
+}
+
+.timelineActorAvatar img {
+    width: 40px;
+    height: 40px;
+}

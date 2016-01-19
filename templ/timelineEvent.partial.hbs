@@ -1,0 +1,30 @@
+<div class="timelineEvent borderA roundCorners">
+    <div class="timelineEventHeader cf">
+        <div class="timelineActorAvatar">
+            <a href="{{actor.url}}">
+                <img title="{{actor.name}}'s avatar" src="{{actor.avatarUrl}}">
+            </a>
+        </div>
+
+        <div class="timelineEventDescription">
+            <a href="{{actor.url}}">{{actor.name}}</a>
+            {{action.description}}.
+        </div>
+
+        <div class="timelineEventDate">
+            {{dateDescription}}
+        </div>
+    </div>
+
+    <div class="timelineEventBody">
+        {{markdown body}}
+    </div>
+
+    {{#if attachments}}
+        <div class="timelineEventAttachments">
+            {{#each attachment}}
+                <img src="{{href}}">
+            {{/each}}
+        </div>
+    {{/if}}
+</div>

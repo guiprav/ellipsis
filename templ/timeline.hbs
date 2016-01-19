@@ -1,0 +1,10 @@
+{{> head}}
+<link rel="stylesheet" href="{{baseUrl}}/styl/timeline.css">
+
+{{> socialHeader}}
+
+<div class="content">
+    {{#each timelineEvents}}
+        {{> timelineEvent}}
+    {{/each}}
+</div>

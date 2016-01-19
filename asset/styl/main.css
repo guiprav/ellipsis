@@ -2,13 +2,41 @@
     box-sizing: border-box;
 }
 
+.cf:after {
+    content: '';
+
+    clear: both;
+
+    display: table;
+}
+
 .content {
     width: 1100px;
     margin: 0 auto;
+}
+
+:first-child {
+    margin-top: 0;
+}
+
+:last-child {
+    margin-bottom: 0;
 }
 
 a:link,
 a:visited,
 a:active {
     color: #4183c4;
+}
+
+.borderA {
+    border: 1px solid #d0d0d0;
+}
+
+.borderB {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.roundCorners {
+    border-radius: 3px;
 }
