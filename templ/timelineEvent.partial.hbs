@@ -7,8 +7,10 @@
         </div>
 
         <div class="timelineEventDescription">
-            <a href="{{actor.url}}">{{actor.name}}</a>
-            {{action.description}}.
+            <a href="{{actor.url}}" class="timelineActorName">{{actor.name}}</a>
+            {{#with action}}
+                {{description}}{{link noun href=nounLink space='before'}}.
+            {{/with}}
         </div>
 
         <div class="timelineEventDate">

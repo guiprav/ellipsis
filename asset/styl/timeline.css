@@ -1,5 +1,15 @@
 .timelineEvent {
     padding: 10px;
+
+    background-color: white;
+}
+
+.timelineEvent + .timelineEvent {
+    margin-top: 20px;
+}
+
+.timelineEventHeader {
+    margin-bottom: 10px;
 }
 
 .timelineActorAvatar {
@@ -10,4 +20,8 @@
 .timelineActorAvatar img {
     width: 40px;
     height: 40px;
+}
+
+.timelineActorName {
+    font-weight: bold;
 }

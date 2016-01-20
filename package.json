@@ -15,6 +15,7 @@
     "start": "./index.js"
   },
   "dependencies": {
+    "array.prototype.includes": "^1.0.0",
     "express": "^4.13.3",
     "front-matter": "^2.0.5",
     "glob": "^6.0.3",

@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 14px;
+
+    background-color: #e9eaed;
+}
+
 .cf:after {
     content: '';
 
